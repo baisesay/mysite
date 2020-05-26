@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABS Web Design-About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <span class="highlight">ABS</span> Web Design
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="flexdesign.html">Designs</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="menu-login">
+                <!--bootstrap element/class-->
+                <i class="fa fa-user-circle-o" aria-hidden="true" onclick="loginbgView()"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="login-bg">
+        <form action="" method="post" onsubmit="btnSubmit2()">
+            <div class="form-data">
+                <i class="fa fa-user-circle-o" aria-hidden="true" id="user" style="font-size: 60px;"></i>
+                <span class="close" onclick=" return btnLoginClose()">X</span>
+                <h1>Log In</h1>
+                <input type="email" name="mail" id="mail" placeholder="Email" required>
+                <input type="password" name="word" id="word" placeholder="Password" required>
+                <div>
+                    <a href="">Forgot password?</a>
+                </div>
+                <button type="submit"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Login</button>
+
+                <p>Don't have an account? <span onclick="switchsignup()">Sign Up</span></p>
+
+            </div>
+        </form>
+    </div>
+
+    <div class="signup-bg">
+        <form name="regform" id="regform" action="" method="Post" onsubmit="return btnSubmit()">
+            <div class="popcontent">
+
+                <span class="close" onclick=" return btnClose()">X</span>
+                <i class="fa fa-user-circle-o" aria-hidden="true" id="user"></i>
+                <h2>Sign Up </h2>
+
+                <input type="text" name="fname" id="fname" placeholder="FirstName" onkeyup="Verifyfname()">
+                <div id="error_fname"></div>
+
+                <input type="text" name="lname" id="lname" placeholder="LastName" onkeyup="Verifylname()">
+                <div id="error_lname"></div>
+
+                <input type="email" name="email" id="email" placeholder="Email" onkeyup="Verifyemail()">
+                <div id="error_email"></div>
+
+                <input type="password" name="pass" id="pass" placeholder="Password" onkeyup="Verifypass()">
+                <div id="error_pass"></div>
+
+                <input type="radio" name="gender" id="male" value="M" onmousedown="Verifygender()"><label id="m_label">Male</label>
+                <input type="radio" name="gender" id="female" value="F" onmousedown="Verifygender()"><label id="f_label">Female</label>
+                <div id="error_gender"></div>
+
+                <input type="text" name="contact" id="contact" placeholder="PhoneNumber" onkeyup="Verifycontact()">
+                <div id="error_contact"></div>
+
+                <select name="interest" id="interest" onmousedown="Verifyinterest()">
+        <option value="space">Select Interest</option>
+        <option value="None">None</option>	
+        <option value="HTML5">Html5</option>
+        <option value="CSS3">CSS3</option>
+        <option value="JAVASCRIPT">javascript</option>
+        <option value="PHP">PHP</option>
+        <option value="GRAPHIC DESIGN">Graphic Design</option>
+        <option value="MYSQL DATABASE">MySql Database</option>
+        </select>
+                <div id="error_interest"></div>
+                <input type="submit" name="send" value="SUBMIT">
+
+                <p>Already have an account? <span onclick="switchlogin()">Log in </span></p>
+            </div>
+        </form>
+    </div>
+
+    <section id="about-banner">
+        <div class="container">
+            <h1>Welcome to our about page</h1>
+        </div>
+    </section>
+
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptatem rem reprehenderit quae nostrum possimus dolorum deserunt accusantium pariatur harum quaerat iusto doloribus unde reiciendis obcaecati? Ipsum, tenetur minima, necessitatibus
+                    molestias ab veniam nisi ut illo assumenda magni atque incidunt quas sit impedit cumque soluta quisquam hic! Et, odio libero.</p>
+
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aut magni sed, aliquid earum voluptates itaque laboriosam, architecto nobis dolores alias odio unde non aperiam ipsum inventore id sequi repudiandae possimus autem. Maxime aut
+                    officiis magnam veritatis aliquam ab asperiores corporis in, eligendi perferendis fuga, modi suscipit tempore nemo optio?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit labore accusantium corrupti quae praesentium sit officia laborum culpa illum! Odit aspernatur adipisci facere cumque dolorum aliquam incidunt vel accusamus repudiandae voluptate
+                    voluptates animi pariatur error asperiores consectetur, corrupti cum id, fugit numquam nemo maiores quos at. Quasi animi modi porro.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quia nesciunt dolor quis voluptatum facere, iure iusto amet qui delectus consequatur natus quam, cumque sed aperiam necessitatibus harum blanditiis in! Nostrum et nemo
+                    impedit facere magnam dolore voluptate dolores asperiores vero corporis! Ullam totam facere, velit recusandae repellat magni excepturi!</p>
+            </article>
+
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>What We Do </h3>
+                    <p>The first white missionary to travel to Umuofia. Mr. Brown institutes a policy of compromise, understanding, and non-aggression between his flock and the clan. He even becomes friends with prominent clansmen and builds a school and
+                        a hospital in Umuofia. Unlike Reverend Smith, he attempts to appeal respectfully to the tribe’s value system rather than harshly impose his religion on it.</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to our newsletter</h1>
+            <form action="">
+                <input type="email" name="" id="" placeholder="Enter Email..." required>
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="banner2">
+        <div class="container">
+            <h1>Our Team</h1>
+            <p>We have a hard working and reliable team that is always ready to satisfy our customers.</p>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="member" id="member" onmouseover="socialview()" onmouseout="view()">
+                <img src="images/abs.jpg" alt="Abdulai Bai Sesay">
+                <h3>I'M <span class="active">Abdulai Bai</span> Sesay</h3>
+                <h4>A <span class="active">Lead UX & UI</span> designer based in Sierra Leone</h4>
+                <p>I design various forms of website, I love what I do and am very passionate about my work. Designing websites have been my dream since I was little. I almost spend most of my time using my computer to design new web designs and upgrade
+                    my skills inorder for me to be in-line with the latest technological programs.</p>
+
+                <div id="social2">
+                    <a href="https://www.instagram.com/baiabdulai"> <img src="images/instargram.png" alt=""></a>
+                    <a href="https://www.twitter.com/BaiAbdulai"> <img src="images/twitter.png" alt=""></a>
+                    <a href="mailto:abdulaibais@gmail.com"><img src="images/email.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100013591290988"> <img src="images/face.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/abdulai-bai-sesay-180b751a8"> <img src="images/linkedin.png" alt=""></a>
+                </div>
+
+
+            </div>
+
+            <div class="member">
+                <img src="images/ABS1.jpg" alt="Abdulai Bai Sesay">
+                <h3>I'M <span class="active">Abdulai Bai</span> Sesay</h3>
+                <h4>A <span class="active">Lead UX & UI</span> designer based in Sierra Leone</h4>
+                <p>I design various forms of website, I love what I do and am very passionate about my work. Designing websites have been my dream since I was little. I almost spend most of my time using my computer to design new web designs and upgrade
+                    my skills inorder for me to be in-line with the latest technological programs.</p>
+
+                <div id="social2">
+                    <a href="https://www.instagram.com/baiabdulai"> <img src="images/instargram.png" alt=""></a>
+                    <a href="https://www.twitter.com/BaiAbdulai"> <img src="images/twitter.png" alt=""></a>
+                    <a href="mailto:abdulaibais@gmail.com"><img src="images/email.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100013591290988"> <img src="images/face.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/abdulai-bai-sesay-180b751a8"> <img src="images/linkedin.png" alt=""></a>
+                </div>
+
+            </div>
+
+            <div class="member">
+                <img src="images/ABS2.jpg" alt="Abdulai Bai Sesay">
+                <h3>I'M <span class="active">Abdulai Bai</span> Sesay</h3>
+                <h4>A <span class="active">Lead UX & UI</span> designer based in Sierra Leone</h4>
+                <p>I design various forms of website, I love what I do and am very passionate about my work. Designing websites have been my dream since I was little. I almost spend most of my time using my computer to design new web designs and upgrade
+                    my skills inorder for me to be in-line with the latest technological programs.</p>
+
+                <div id="social2">
+                    <a href="https://www.instagram.com/baiabdulai"> <img src="images/instargram.png" alt=""></a>
+                    <a href="https://www.twitter.com/BaiAbdulai"> <img src="images/twitter.png" alt=""></a>
+                    <a href="mailto:abdulaibais@gmail.com"><img src="images/email.png" alt=""></a>
+                    <a href="https://www.facebook.com/profile.php?id=100013591290988"> <img src="images/face.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/abdulai-bai-sesay-180b751a8"> <img src="images/linkedin.png" alt=""></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>ABS Web Design, Copyright &copy; 2020</p>
+        <a href="https://www.instagram.com/baiabdulai"> <img src="images/instargram.png" alt=""></a>
+        <a href="https://www.twitter.com/BaiAbdulai"> <img src="images/twitter.png" alt=""></a>
+        <a href="mailto:abdulaibais@gmail.com"><img src="images/email.png" alt=""></a>
+        <a href="https://www.facebook.com/profile.php?id=100013591290988"> <img src="images/face.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/abdulai-bai-sesay-180b751a8"> <img src="images/linkedin.png" alt=""></a>
+    </footer>
+
+</body>
+
+</html>
